@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7ff">
+  <meta name="description" content="Discover your career skill gaps and build your learning roadmap with SkillBridge AI.">
+  <title>SkillBridge AI | Your Career, Your Roadmap</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#" aria-label="SkillBridge AI home">
+      <span class="brand-icon">S</span>
+      SkillBridge <span class="ai">AI</span>
+    </a>
+    <nav>
+      <a href="#analyzer">Skill Analyzer</a>
+      <a href="#how-it-works">How It Works</a>
+    </nav>
+    <a class="nav-cta" href="#analyzer">Get Started ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR PERSONAL CAREER COMPASS</div>
+        <h1>Your potential is great.<br>Make your <span>next move</span><br>count.</h1>
+        <p class="hero-text">
+          Discover your skill gaps, understand your career readiness,
+          and get a practical 7-day roadmap to move closer to your dream role.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#analyzer">Analyze My Skills <span>→</span></a>
+          <a class="secondary-link" href="#how-it-works">See how it works ↓</a>
+        </div>
+        <div class="trust-line">
+          <span>✓ No sign-up required</span>
+          <span>✓ Free to explore</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="preview-card">
+          <div class="preview-top">
+            <div>
+              <span class="small-label">YOUR CAREER JOURNEY</span>
+              <h3>Progress starts here.</h3>
+            </div>
+            <span class="sparkle">✳</span>
+          </div>
+          <div class="preview-score">
+            <div class="mini-ring"><span>✓</span></div>
+            <div><strong>Know your skills</strong><p>Find what to learn next</p></div>
+          </div>
+          <div class="preview-bar"><span></span></div>
+          <div class="preview-stats">
+            <div><strong>01</strong><span>Choose a goal</span></div>
+            <div><strong>02</strong><span>Find skill gaps</span></div>
+            <div><strong>03</strong><span>Build a plan</span></div>
+          </div>
+          <div class="floating-note"><span>✦</span> Your next step, made clear.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-icon">◎</span><div><strong>Know your strengths</strong><p>See your matching skills</p></div></div>
+      <div><span class="benefit-icon">⌁</span><div><strong>Close skill gaps</strong><p>Find what you need to learn</p></div></div>
+      <div><span class="benefit-icon">↗</span><div><strong>Take action</strong><p>Follow a focused roadmap</p></div></div>
+    </section>
+
+    <section class="analyzer section" id="analyzer">
+      <div class="section-heading">
+        <span class="eyebrow">LET'S BUILD YOUR FUTURE</span>
+        <h2>Your career readiness <span>starts here.</span></h2>
+        <p>Tell us your goal and select the skills you already know.</p>
+      </div>
+
+      <div class="analyzer-grid">
+        <div class="form-card">
+          <div class="step-heading"><span>01</span><div><h3>Choose your target role</h3><p>What career are you working towards?</p></div></div>
+
+          <label for="role">Target career</label>
+          <select id="role">
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="ai">AI / ML Engineer</option>
+            <option value="data">Data Analyst</option>
+          </select>
+
+          <div class="step-heading skill-heading"><span>02</span><div><h3>What skills do you have?</h3><p>Select everything you know, even at a beginner level.</p></div></div>
+          <div class="skill-list" id="skill-list"></div>
+          <p class="helper">Tip: Be honest. Your results are more useful when they reflect your current skills.</p>
+          <button class="primary-btn analyze-btn" id="analyze-btn" type="button">Analyze My Skills <span>→</span></button>
+          <p id="form-error" class="error-message" role="alert"></p>
+        </div>
+
+        <div class="result-card" id="results" aria-live="polite">
+          <div class="empty-result">
+            <div class="empty-icon">✳</div>
+            <span class="eyebrow">YOUR PERSONAL REPORT</span>
+            <h3>Your next chapter starts with one step.</h3>
+            <p>Choose your career and skills, then analyze your readiness to reveal your personalized results.</p>
+            <div class="empty-features">
+              <span>✓ Skill match score</span>
+              <span>✓ Missing skills</span>
+              <span>✓ 7-day learning roadmap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+      <div class="section-heading">
+        <span class="eyebrow">SIMPLE BY DESIGN</span>
+        <h2>Three steps. <span>A clearer direction.</span></h2>
+      </div>
+      <div class="how-grid">
+        <article class="how-card"><span class="how-number">01</span><div class="how-icon">◎</div><h3>Choose your goal</h3><p>Select the career you want to pursue and define your direction.</p></article>
+        <article class="how-card"><span class="how-number">02</span><div class="how-icon">⌁</div><h3>Discover your gaps</h3><p>Compare your current skills with the skills defined for your target role.</p></article>
+        <article class="how-card"><span class="how-number">03</span><div class="how-icon">↗</div><h3>Make your plan</h3><p>Get a seven-day starter roadmap with practical learning activities.</p></article>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <span class="eyebrow">YOUR FUTURE IS A WORK IN PROGRESS</span>
+      <h2>Small steps. <span>Big possibilities.</span></h2>
+      <p>You don't need to know everything. You just need to know what comes next.</p>
+      <a class="primary-btn" href="#analyzer">Find My Next Step →</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"><span class="brand-icon">S</span> SkillBridge <span class="ai">AI</span></a>
+    <p>Built for learners. Designed for growth.</p>
+    <span>© 2026 SkillBridge AI · Prototype</span>
+  </footer>
+</body>
+</html>
